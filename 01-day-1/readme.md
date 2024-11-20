@@ -14,38 +14,4 @@ Today's Goals (Arrays) :
 ### Question 2: 
 - Monotonic Array - An array is monotonic if it is either monotone increasing or monotone decreasing. An array is monotone increasing if all its elements from left to right are non-decreasing. An array is monotone decreasing if all  its elements from left to right are non-increasing. Given an integer array return true if the given array is monotonic, or false otherwise.
 
-All the best ! 
-
-## Instructions
-
-
-### Function Signature Question 2
-
-```js
-```
-### Examples
-```JS
-```
-### Constraints
-### Hints
-## Solutions
-<details>
-  <summary>Click For Solution</summary>
-
-```JS
-const monotonicArray = (arr) => {
-  const sortedArray = arr.sort((a, b) => a - b);
-  return sortedArray.map((x) => x * x);
-};
-```
-</details>
-
-### Explanation
-<details>
-  <summary>Click For Explanation</summary>
-
-</details>
-
-### Test Cases
-```JS
-```
+All the best !
