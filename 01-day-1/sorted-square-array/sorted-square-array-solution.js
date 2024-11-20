@@ -1,6 +1,6 @@
-function helloWorld() {
-  // Return the string 'Hello World!'
-  return 'Hello World!';
-}
+export const sortedSquareArray = (arr) => {
+  const sortedArray = arr.sort((a, b) => a - b);
+  return sortedArray.map((x) => x * x);
+};
 
-module.exports = helloWorld;
+module.exports = sortedSquareArray;

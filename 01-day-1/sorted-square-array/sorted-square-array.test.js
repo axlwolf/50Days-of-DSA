@@ -1,6 +1,11 @@
-import { helloWorld } from "./sorted-square-array.js";
+import { sortedSquareArray } from "./sorted-square-array.js";
 
-test("Returning 'Hello, World!' as a string", () => {
-  const result = helloWorld();
-  expect(result).toBe("Hello World!");
+test("return true if the given array is monotonic, or false otherwise", () => {
+  const arr = [2, 1, 9, 16, 10];
+  const allOps = arr.sort((a, b) => a - b).map((x) => x * x);
+  const result = sortedSquareArray(arr);
+
+  console.log({ result, allOps });
+
+  expect(result).toEqual(allOps);
 });
