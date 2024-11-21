@@ -1,17 +1,44 @@
 ## Instructions
 
 ### Question 1:
-- Monotonic Array -  You are given an array of Integers in which each subsequent value is not less than the previous value. Write a function that takes this array as an input and returns a new array with the squares of each number sorted in ascending order..
+- Monotonic Array -  Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
 ### Function Signature Question 1
 
 ```js
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortedSquares = (nums) => {}
 ```
 ### Examples
+
 ```JS
+Input: nums = [-4,-1,0,3,10]
+Output: [0,1,9,16,100]
+Explanation: After squaring, the array becomes [16,1,0,9,100].
+After sorting, it becomes [0,1,9,16,100].
 ```
+
+Example 2:
+```JS
+
+Input: nums = [-7,-3,2,3,11]
+Output: [4,9,9,49,121]
+```
+
 ### Constraints
+- 1 <= nums.length <= 104
+- 104 <= nums[i] <= 104
+- nums is sorted in non-decreasing order.
+
 ### Hints
+ Clarifying questions:
+  - Are all numbers positive? No, they can be negative, positive or 0
+  - Are the integers disctinct? Not necessarly
+  - Can an empty array be passed? Yes
+
 ## Solutions
 <details>
   <summary>Click For Solution</summary>
@@ -55,7 +82,7 @@ arr.sort((a, b) => a - b);
 ```JS
 test("return true if the given array is monotonic, or false otherwise", () => {
   const arr = [2, 1, 9, 16, 10];
-  const allOps = arr.sort((a, b) => a - b).map((x) => x * x);
+  const allOps = arr.map((x) => x * x).sort((a, b) => a - b);
   const result = sortedSquareArray(arr);
 
   console.log({ result, allOps });
