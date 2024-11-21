@@ -15,4 +15,4 @@
 // };
 
 export const sortedSquareArray = (arr) =>
-  arr.sort((a, b) => a - b).map((x) => x * x);
+  arr.map((x) => x * x).sort((a, b) => a - b);
