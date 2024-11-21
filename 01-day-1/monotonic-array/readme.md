@@ -13,19 +13,36 @@ const isMonotonic = (array) => {
 
 #### Examples
 ```js
-console.log(isMonotonic([1, 2, 2, 3])); // true (Monotone Increasing)
-console.log(isMonotonic([6, 5, 4, 4])); // true (Monotone Decreasing)
-console.log(isMonotonic([1, 3, 2]));    // false (Not Monotonic)
-console.log(isMonotonic([1, 1, 1]));    // true (Monotone Increasing and Decreasing)
+Example 1:
+
+Input: nums = [1,2,2,3]
+Output: true
+Example 2:
+
+Input: nums = [6,5,4,4]
+Output: true
+Example 3:
+
+Input: nums = [1,3,2]
+Output: false
 ```
 
 #### Constraints
+```
 1. `1 <= array.length <= 10^5`
 2. `-10^5 <= array[i] <= 10^5`
+```
 
 #### Hints
+<details>
+  <summary>Click For Hints</summary>
 1. Try checking the array in a single pass to determine if it is monotonic.
 2. You can use boolean flags to track whether the array is increasing or decreasing.
+
+#### Claryfying questions
+- Is an empty array monotonic? Yes
+- Is the array with only one integer monotonic? Yes
+</details>
 
 #### Solutions
 <details>

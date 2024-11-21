@@ -9,7 +9,18 @@
  * @returns {boolean} - Returns true if the array is monotonic,
  *                      or false otherwise.
  ***************************************************************/
-const isMonotonic = (array) => {
-  let isMonotonicInc = true;
-  let isMonotonicDec = true;
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+export const isMonotonic = (nums) => {
+  if (nums.length <= 1) return true;
+  let isIncreasing = true;
+  let isDecreasing = true;
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] > nums[i - 1]) isDecreasing = false;
+    if (nums[i] < nums[i - 1]) isIncreasing = false;
+    if (!isIncreasing && !isDecreasing) return false;
+  }
+  return isIncreasing || isDecreasing;
 };
