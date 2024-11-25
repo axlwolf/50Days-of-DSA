@@ -49,20 +49,27 @@ Output: false
   <summary>Click For Solution</summary>
 
 ```js
-const isMonotonic = (array) => {
-  let isIncreasing = true;
-  let isDecreasing = true;
+ const isMonotonic = (nums) => {
+  const n = nums.length;
+  if (n === 1) return true;
 
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] > array[i - 1]) {
-      isDecreasing = false;
+  let isInc = true;
+  let isDec = true;
+
+  for (let i = 1; i < n; i++) {
+    if (!isInc && !isDec) {
+      return false;
     }
-    if (array[i] < array[i - 1]) {
-      isIncreasing = false;
+
+    if (nums[i] < nums[i - 1]) {
+      isInc = false;
+    }
+    if (nums[i] > nums[i - 1]) {
+      isDec = false;
     }
   }
 
-  return isIncreasing || isDecreasing;
+  return isInc || isDec;
 };
 ```
 </details>
@@ -70,7 +77,7 @@ const isMonotonic = (array) => {
 #### Explanation
 <details>
   <summary>Click For Explanation</summary>
-  The function `isMonotonic` checks if the array is either entirely non-increasing or non-decreasing. It uses two boolean flags, `isIncreasing` and `isDecreasing`, initialized to `true`. As it iterates through the array, it adjusts these flags based on the comparison between consecutive elements. Finally, it returns `true` if either flag remains `true`, indicating that the array is monotonic.
+  The function `isMonotonic` checks if the array is either entirely non-increasing or non-decreasing. It uses two boolean flags, `isInc` and `isDec`, initialized to `true`. As it iterates through the array, it adjusts these flags based on the comparison between consecutive elements. Finally, it returns `true` if either flag remains `true`, indicating that the array is monotonic.
 </details>
 
 #### Test Cases
