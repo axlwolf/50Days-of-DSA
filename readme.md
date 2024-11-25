@@ -1,7 +1,7 @@
 # :star: 50 Days of DSA JavaScript Data Structures Algorithms LEETCODE
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT "MIT License")
-![GitHub repo size](https://img.shields.io/github/repo-size//axlwolf/50Days-of-DSA)
+![GitHub repo size](https://img.shields.io/github/repo-size/axlwolf/50Days-of-DSA)
 [![Active](http://img.shields.io/badge/Status-Active-green.svg)](https://github.com//axlwolf/50Days-of-DSA)
 [![Generic badge](https://img.shields.io/badge/lang-javascript-yellow.svg)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 [![Generic badge](https://img.shields.io/badge/last%20updated-20--11--2024-blue)](https://github.com//axlwolf/50Days-of-DSA)
