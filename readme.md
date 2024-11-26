@@ -41,7 +41,7 @@ Course Outline:
 
 Day 1: Arrays, Big O, Sorted Squared Array, Monotonic Array
 
-Day 2:Recursion,k-th symbol in Grammar,Josephus problem
+Day 2: Recursion, k-th symbol in Grammar,Josephus problem
 
 Day 3:Recursion, Tower of Hanoi, Power Sum
 
